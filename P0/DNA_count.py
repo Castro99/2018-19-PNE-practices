@@ -16,7 +16,7 @@ def dna_length():
 info = dna_length()
 
 def print_dna_length(number):
-    print('Total length: ', number[0])
+    print('Length: ', number[0])
     print('a: ', number[1])
     print('c: ', number[2])
     print('g: ', number[3])
