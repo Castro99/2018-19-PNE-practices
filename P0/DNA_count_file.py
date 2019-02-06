@@ -3,7 +3,7 @@
 with open('DNA.csv', 'r') as f:
     for series in f:
         def dna_length():
-            number = len(series.replace('\n', ''))
+            number = length(series.replace('\n', ''))
             a = series.count('a')
             c = series.count('c')
             g = series.count('g')
