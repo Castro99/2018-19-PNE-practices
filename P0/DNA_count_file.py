@@ -11,6 +11,7 @@ with open('DNA.csv', 'r') as f:
             return number, a, c, g, t
 
         info = dna_length()
+
         def print_dna_length(number):
             print('Length: ', number[0])
             print('a: ', number[1])
