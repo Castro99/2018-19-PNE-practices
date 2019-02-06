@@ -5,7 +5,7 @@ sequence = input('Introduce a DNA sequence to be analize: ')
 def dna_length():
 
     sequence = sequence.upper()
-    number = len(sequence)
+    number = length(sequence)
     a = sequence.count('a')
     c = sequence.count('c')
     g = sequence.count('g')
