@@ -1,11 +1,11 @@
-# Exercise of reading file Session 7
+# Exercise of writing file Session 7
 
 File = "mynotes.txt"
 
-# Open the file, my file is an object
+
 mytext = open(File, 'c')
 
-print("File has been opened correctly : {}".format(myfile.name))
+print("File has been opened correctly : {}".format(mytext.File))
 
 Text = mytext.read()
 
