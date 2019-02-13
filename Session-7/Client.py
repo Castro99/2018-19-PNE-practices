@@ -1,4 +1,4 @@
-#Program to the first client
+#Exercise Client Session 7
 
 import socket
 
@@ -17,6 +17,3 @@ msg = s.recv(2048).decode("utf-8")
 print("THE SERVER MESSAGE: ")
 print(msg)
 s.close()
-
-
-print("The end")
