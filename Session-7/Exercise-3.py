@@ -1,46 +1,28 @@
+# Exercise 3 Session 7
+
 import socket
 
-# Configure the Server's IP and PORT
-PORT = 8082
-IP = "212.128.253.111"
-MAX_OPEN_REQUESTS = 5
+while True:
 
-# Counting the number of connections
-number_con = 0
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-# create an INET, STREAMing socket
-serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-try:
-    serversocket.bind((IP, PORT))
-    # Become a server socket
-    # MAX_OPEN_REQUESTS connect requests before refusing outside connections
-    serversocket.listen(MAX_OPEN_REQUESTS)
+    print("The Socket has been created")
 
-    while True:
-        # accept connections from outside
-        print("Waiting for connections at {}, {} ".format(IP, PORT))
-        (clientsocket, address) = serversocket.accept()
+    PORT = 8080
+    #Mario IP
+    IP = "212.128.253.59"
 
-        # Another connection
-        number_con += 1
 
-        # Print the conection number
-        print("CONNECTION: {}. From the IP: {}".format(number_con, address))
+    file = input("TYPE OF MESSAGE: ")
+    s.connect((IP, PORT))
 
-        # Read the message from the client, if any
-        msg = clientsocket.recv(2048).decode("utf-8")
-        print("CLIENT MESSAGE: {}".format(msg))
+    s.send(str.encode(file))
 
-        # Send the message
-        message = "HELLO FROM THE TEACHER SERVER"
-        send_bytes = str.encode(message)
-        # We must write bytes, not a string
-        clientsocket.send(send_bytes)
-        clientsocket.close()
+    msg = s.recv(2048).decode("utf-8")
+    print("THE SERVER MESSAGE: ")
+    print(msg)
 
-except socket.error:
-    print("Problems using port {}. Do you have permission?".format(PORT))
+    s.close()
 
-except KeyboardInterrupt:
-    print("Server stopped by the user")
-    serversocket.close()
+
+    print("The end")
