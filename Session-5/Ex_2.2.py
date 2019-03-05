@@ -1,5 +1,5 @@
 #Exercise II Second part lesson 5
-from Base import count_bases
+from Base import count_base
 
 def percentages(seq):
 
@@ -15,7 +15,7 @@ def percentages(seq):
 
 def main(list):
     for seq in list:
-        count= count_bases(seq)
+        count= count_base(seq)
         stats= percentages(seq)
         print('Base A')
         print('Counter: ', count['A'])
