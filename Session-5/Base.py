@@ -1,4 +1,4 @@
-def count_bases(seq):
+def count_base(seq):
 
     a=0
     c=0
