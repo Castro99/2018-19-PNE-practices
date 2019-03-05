@@ -1,4 +1,4 @@
-#Exercise I part II lesson P2
+#Exercise I part II lesson P1
 
 from Ex_1 import Seq
 
