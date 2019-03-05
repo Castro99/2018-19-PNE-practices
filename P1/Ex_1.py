@@ -1,4 +1,4 @@
-#Exercise I lesson P2
+#Exercise I lesson P1
 class Seq:
 
     def  __init__  (self, strbases):
