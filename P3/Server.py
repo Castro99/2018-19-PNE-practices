@@ -17,8 +17,8 @@ def process_client(cs):
     ac = "ACTG"
 
 
-    if msg[0] == "asdf":
-        response += "EMPTY"
+    if msg[0] == "NOTHING":
+        response += "Nothing"
         cs.send(str.encode(response))
 
     nmbr = 0
@@ -26,10 +26,10 @@ def process_client(cs):
         if n in ac:
             nmbr += 1
     if nmbr == len(msg[0]):
-        response += "OK!"
+        response += "Yep!"
         response += "\n"
     elif nmbr != len(msg[0]):
-        response += "ERROR"
+        response += "Fail"
         cs.send(str.encode(response))
 
 
@@ -75,22 +75,22 @@ def process_client(cs):
 
 
 
-serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-serversocket.bind((IP, PORT))
+s.bind((IP, PORT))
 
-serversocket.listen(MAX_OPEN_REQUEST)
+s.listen(MAX_OPEN_REQUEST)
 
-print("Socket ready: {}".format(serversocket))
+print("Correctly perform: {}".format(s))
 
 while True:
 
     print("Waiting for connections at: {}, {}".format(IP, PORT))
-    (clientsocket, address) = serversocket.accept()
+    (clientsocket, address) = s.accept()
 
-    # ...procress the client request
-    print("Attending client: {}".format(address))
+
+    print("IP connection from: {}".format(address))
 
     process_client(clientsocket)
-    # ...Close the socket
+
     clientsocket.close()
