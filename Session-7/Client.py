@@ -3,12 +3,13 @@
 import socket
 
 #Now we will try to create a socket for communicating with the server
+
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 print("The Socket has been created")
 
 PORT = 8080
-IP = "212.128.253.64"
+IP = "192.168.1.134"
 
 # Connecting to the server
 s.connect((IP, PORT))
