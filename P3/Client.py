@@ -2,7 +2,7 @@
 
     import socket
 
-    port = 8046
+    port = 8080
     IP = "192.168.1.134"
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
