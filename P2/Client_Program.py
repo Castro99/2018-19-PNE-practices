@@ -8,7 +8,7 @@ while True:
     print("Socket has been created")
 
     PORT = 8080
-    IP = "192.168.1.38"
+    IP = "192.168.1.134"
 
 
     file = input("Type a message: ")
