@@ -30,12 +30,12 @@ class Seq:
 
 
 
-    def counting(self, base):
+    def Count(self, base):
         self.base = base
         count = self.strbases.count(base)
         return count
 
-    def percentage(self, base):
+    def percent(self, base):
         self.base = base
         p = round(100.0 * self.strbases.count(base) / len(self.strbases), 2)
         return p
