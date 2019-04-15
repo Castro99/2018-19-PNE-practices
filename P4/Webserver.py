@@ -3,7 +3,7 @@ import termcolor
 
 # Change this IP to yours!!!!!
 IP = "192.168.1.95"
-PORT = 8082
+PORT = 8080
 MAX_OPEN_REQUESTS = 5
 
 
@@ -17,19 +17,19 @@ def process_client(cs):
     # Print the received message, for debugging
     print()
     print("Request message: ")
-    termcolor.cprint(msg, 'green')
+    termcolor.cprint(msg, 'black')
 
     ms = msg.splitlines()
     ms = ms[0].lstrip("GET ").rstrip(" HTTP/1.1")
-    if ms == "":
+    if ms == "/":
         with open("Index.html") as f:
             content = f.read()
         f.close()
-    elif ms == "/pink":
+    elif ms == "/Pink":
         with open("Pink.html") as f:
             content = f.read()
         f.close()
-    elif ms == "/blue":
+    elif ms == "/Blue":
         with open("Blue.html") as f:
             content = f.read()
         f.close()
@@ -64,7 +64,7 @@ serversocket.bind((IP, PORT))
 # MAX_OPEN_REQUESTS connect requests before refusing outside connections
 serversocket.listen(MAX_OPEN_REQUESTS)
 
-print("Socket ready: {}".format(serversocket))
+print("Socket is ready for the run: {}".format(serversocket))
 
 while True:
     # accept connections from outside
@@ -74,6 +74,3 @@ while True:
 
     # Connection received. A new socket is returned for communicating with the client
     print("Attending connections from client: {}".format(address))
-
-    # Service the client
-process_client(clientsocket)
