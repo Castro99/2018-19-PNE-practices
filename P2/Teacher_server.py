@@ -2,7 +2,7 @@ import socket
 
 
 PORT = 8080
-IP = "192.168.1.38"
+IP = "192.168.1.134"
 MAX_OPEN_REQUESTS = 5
 
 
@@ -31,15 +31,15 @@ try:
         print("Message from client: {}".format(msg))
 
 
-        message = "Hello from the teacher's server"
+        message = "Hello there, from teacher's server"
         send_bytes = str.encode(message)
 
         clientsocket.send(send_bytes)
         clientsocket.close()
 
 except socket.error:
-    print("Problems using port {}. Do you have permission?".format(PORT))
+    print("ERROR problems with the port {}. Do you have permission or you are a fekas?".format(PORT))
 
 except KeyboardInterrupt:
-    print("Server stopped by the user")
+    print("The user just broke the server or decide to stop it")
 serversocket.close()
