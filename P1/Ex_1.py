@@ -7,7 +7,7 @@ class Seq:
     def len(self):
         return len(self.strbases)
 
-    def complement(self):
+    def compl(self):
         word = ''
         for letter in self.strbases:
             self.strbases = self.strbases.upper()
@@ -22,7 +22,7 @@ class Seq:
         c = Seq(word)
         return c
 
-    def reversed(self):
+    def rev(self):
         s = self.strbases[::-1]
         seq = Seq(s)
         return seq
