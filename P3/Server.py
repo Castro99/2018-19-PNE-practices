@@ -18,7 +18,7 @@ def process_client(cs):
 
 
     if msg[0] == "NOTHING":
-        response += "Nothing"
+        response += "Nothing to do with you"
         cs.send(str.encode(response))
 
     nmbr = 0
@@ -29,7 +29,7 @@ def process_client(cs):
         response += "Yep!"
         response += "\n"
     elif nmbr != len(msg[0]):
-        response += "Fail"
+        response += "You are a failure"
         cs.send(str.encode(response))
 
 
