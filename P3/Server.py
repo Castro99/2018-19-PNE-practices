@@ -1,7 +1,7 @@
 import socket
 from P3.Seq import Seq
 
-PORT = 8040
+PORT = 8044
 IP = '192.168.1.132'
 MAX_CLIENTS = 5
 
