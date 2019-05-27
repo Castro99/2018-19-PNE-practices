@@ -1,7 +1,7 @@
 import socket
 
 # SERVER IP, PORT
-PORT = 8040
+PORT = 8044
 IP = "192.168.1.132"
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((IP, PORT))
