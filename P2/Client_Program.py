@@ -1,6 +1,6 @@
 #Exercise II lesson P2
 import socket
-from Ex_1 import Seq
+from P2.Ex_1 import Seq
 
 while True:
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
