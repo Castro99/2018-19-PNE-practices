@@ -2,4 +2,4 @@
 
 import termcolor
 
-termcolor.cprint("END", 'blue')
+termcolor.cprint("Hey! This is printed in yellow", 'yellow')
