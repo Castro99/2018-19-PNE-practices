@@ -1,23 +1,31 @@
-#Exercise DNA II
+def dna_count_file():
 
-with open('DNA.csv', 'r') as f:
-    for series in f:
-        def dna_length():
-            number = length(series.replace('\n', ''))
-            a = series.count('a')
-            c = series.count('c')
-            g = series.count('g')
-            t = series.count('t')
-            return number, a, c, g, t
+    # opening text file and convert all sequences into one
 
-        info = dna_length()
+    with open('dna', 'r') as f:
+        sequence=[]
+        for row in f:
+            sequence.append(row)
 
-        def print_dna_length(number):
-            print('Length: ', number[0])
-            print('a: ', number[1])
-            print('c: ', number[2])
-            print('g: ', number[3])
-            print('t: ', number[4])
-            return
+        sequence=''.join(sequence)
+        sequence=sequence.lower()
+        sequence.replace('\n', '')
 
-        print(print_dna_length(info))
+    # counting the bases
+        num=len(sequence)
+
+        a=sequence.count('a')
+        c=sequence.count('c')
+        t=sequence.count('t')
+        g=sequence.count('g')
+
+        print('Total length: ', num)
+        print('A:', a)
+        print('C:', c)
+        print('T:', t)
+        print('G:', g)
+
+        f.close()
+    return
+
+dna_count_file()
