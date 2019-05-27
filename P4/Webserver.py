@@ -2,8 +2,8 @@ import socket
 import termcolor
 
 # Change this IP to yours!!!!!
-IP = "192.168.1.95"
-PORT = 8080
+IP = "192.168.1.132"
+PORT = 8023
 MAX_OPEN_REQUESTS = 5
 
 
@@ -15,41 +15,47 @@ def process_client(cs):
     msg = cs.recv(2048).decode("utf-8")
 
     # Print the received message, for debugging
-    print()
-    print("Request message: ")
-    termcolor.cprint(msg, 'black')
+    if msg != '':
+        print()
+        print("Request message: \n{}".format(msg))
 
-    ms = msg.splitlines()
-    ms = ms[0].lstrip("GET ").rstrip(" HTTP/1.1")
-    if ms == "/":
-        with open("Index.html") as f:
-            content = f.read()
-        f.close()
-    elif ms == "/Pink":
-        with open("Pink.html") as f:
-            content = f.read()
-        f.close()
-    elif ms == "/Blue":
-        with open("Blue.html") as f:
-            content = f.read()
-        f.close()
+        # getting the server the client wants to access
+        request = msg.partition('\n')[0].split(' ')[1]
+
+        # answering the user depending on his request
+        if request == '/':
+            with open('index.html', 'r') as f:
+                content = f.read()
+
+        elif request == '/blue':
+            with open('blue.html', 'r') as f:
+                content = f.read()
+
+        elif request == '/pink':
+            with open('pink.html', 'r') as f:
+                content = f.read()
+
+        else:
+            with open('error.html', 'r') as f:
+                content = f.read()
+
+        # response message
+        status_line = 'HTTP/1.1 200 OK\r\n'
+
+        header = 'Content-type: text/HTML\r\n'
+
+        header += 'Content-lenght: {}\r\n'.format(len(str.encode(content)))
+
+        reponse_message = status_line + header + '\r\n' + content
+
+        cs.send(str.encode(reponse_message))
+
+    # in case there's an empty request message
     else:
-        with open("Error.html") as f:
-            content = f.read()
-        f.close()
-
-    status_line = "HTTP/1.1 200 ok\r\n"
-
-    header = "Content type: text/html\r\n"
-    header += "Content length: {}\r\n".format(len(str.encode(content)))
-
-    response_msg = status_line + header + "\r\n" + content
-
-    cs.send(str.encode(response_msg))
+        print('empty request message!!')
 
     # Close the socket
     cs.close()
-    return PORT
 
 
 # MAIN PROGRAM
@@ -58,13 +64,13 @@ def process_client(cs):
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Bind the socket to the IP and PORT
-serversocket.bind((IP, PORT))
+serversocket.bind(('', PORT))
 
 # Configure the server sockets
 # MAX_OPEN_REQUESTS connect requests before refusing outside connections
 serversocket.listen(MAX_OPEN_REQUESTS)
 
-print("Socket is ready for the run: {}".format(serversocket))
+print("Socket ready: {}".format(serversocket))
 
 while True:
     # accept connections from outside
@@ -74,3 +80,6 @@ while True:
 
     # Connection received. A new socket is returned for communicating with the client
     print("Attending connections from client: {}".format(address))
+
+    # Service the client
+    process_client(clientsocket)
