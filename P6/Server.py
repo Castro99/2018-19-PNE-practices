@@ -1,107 +1,108 @@
-
-import socketserver
 import http.server
+import socketserver
 import termcolor
 from P6.Seq import Seq
 
-PORT = 8000
+# Define the Server's port
+PORT = 8080
 
-
-def seq_analysis(msg):
-
-    actions = {}
-
-    # The function calculations
-    msg = msg.split("&")
-    seq = Seq(msg.pop(0).split("=")[-1].upper())
-    bases = "ACTG"
-
-    if not all(c in bases for c in seq.strbases):
-        actions = "Error"
-        return actions
-
-    actions.update({"Seq": seq.strbases})
-    # Possible functions
-    base = ""
-    for request in msg:
-        if "base" in request:
-            base += request[-1]
-        elif "count" in request or "perc" in request:
-            operation = request.split("=")[-1]
-            action = seq.call_function(operation, base)
-            actions.update({"Result for " + base +" " + operation: action})
-
-        elif request == "chk=on":
-            action = seq.len()
-            actions.update({"Len": action})
-
-
-    return actions
-
-    # Sending message back
-
+# Class with oreur Handler. It is a called derived from BaseHTTPRequestHandler
+# It means that our class inheritates all his methods and properties
 
 class TestHandler(http.server.BaseHTTPRequestHandler):
 
     def do_GET(self):
-        # Printing the request line
-        termcolor.cprint(self.requestline, 'blue')
 
-        request = self.requestline.split()[1]
-        actions = request.split("?")[-1]
+        global base_op, length
+        termcolor.cprint(self.requestline, 'green')
+        path = self.path
 
-        if self.path.startswith("/seq"):
-            analysis = seq_analysis(actions)
-            if analysis == "ERROR":
-                f = open("error.html", 'r')
-                contents = f.read()
-                f.close()
-            else:
-                results = ""
-                for key, value in analysis.items():
-                    results += "<p>"+key+" : "+str(value)+"</p>"
-
-                contents = """<!DOCTYPE html>
-                    <html lang="en">
-                    <head>
-                        <meta charset="UTF-8">
-                        <title>Sequence Analysis</title>
-                    </head>
-                    <body>
-                     <h1>Result of the Analysis</h1>
-                      {}
-                      <a href="/">Home page</a>
-                    </body>
-                    </html>""".format(results)
-
-        elif self.path == "/":
+        if path == '/':
             f = open("Form.html", 'r')
-            contents = f.read()
-            f.close()
+            content = f.read()
+            resp=200
+
+        elif (path[:4] == '/seq' and '=' in path):
+            resp=200
+            msg = path.split('&')
+            seq = msg[0].split('=')[1]
+            if seq.upper().strip('ACTG') == '':
+                seq = Seq(seq)
+                count = {'base=A': ('Count of A: ' + seq.count('A')),
+                         'base=C': ('Count of C: ' + seq.count('C')),
+                         'base=T': ('Count of T: ' + seq.count('T')),
+                         'base=G': ('Count of G: ' + seq.count('G'))}
+                perc = {'base=A': ('Percentage of A: ' + seq.perc('A') + '%'),
+                        'base=C': ('Percentage of C: ' + seq.perc('C') + '%'),
+                        'base=T': ('Percentage of T: ' + seq.perc('T') + '%'),
+                        'base=G': ('Percentage of G: ' + seq.perc('G') + '%')}
+                ops = {'count': count, 'perc': perc}
+                if len(msg) == 3:
+                    length = ''
+                    op = msg[1].split('=')[1]
+                    base = msg[2]
+                    if base in ops[op].keys():
+                        base_op = ops[op][base]
+
+                elif len(msg) == 4:
+                    length = 'The lenght is: ' + str(seq.len())
+                    op = msg[2].split('=')[1]
+                    base = msg[3]
+                    if base in ops[op].keys():
+                        base_op = ops[op][base]
+
+                d = open('response.html', 'w')
+                info = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sequence</title>
+</head>
+<body>
+<h3>Analysis of the sequence</h3>
+    <p></p>
+    <p>Sequence: {}</p>
+    <p></p>
+    <p>{}</p>
+    <p></p>
+    <p>{}</p>
+    <p></p>
+    <a href='/'>Main page</a>
+</body>
+</html>""".format(seq.strbases.upper(), length, base_op)
+                d.write(info)
+                d.close()
+                d = open('response.html', 'r')
+                content = d.read()
 
         else:
-            f = open("Error.html", 'r')
-            contents = f.read()
-            f.close()
+            resp=404
+            f = open('error.html', 'r')
+            content = f.read()
 
-        self.send_response(200)
-
+        self.send_response(resp)
         self.send_header('Content-Type', 'text/html')
-        self.send_header('Content-Length', len(str.encode(contents)))
+        self.send_header('Content-Length', len(str.encode(content)))
         self.end_headers()
 
+        self.wfile.write(str.encode(content))
 
-        self.wfile.write(str.encode(contents))
+        return
 
+Handler = TestHandler
 
-# Main program
-with socketserver.TCPServer(("", PORT), TestHandler) as httpd:
-    print("Serving at PORT: {}".format(PORT))
+# Open the socket server
+with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    print("Serving at PORT: ", PORT)
 
+    # Main loop: Attend the client. Whenever there is a new
+    # clint, the handler is called
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
+        print("")
+        print("Stoped by the user")
         httpd.server_close()
 
 print("")
-print("Server Function finished")
+print("Server Stopped")
