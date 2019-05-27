@@ -1,26 +1,22 @@
-#Exercise DNA I
+seq = input('Insert a DNA sequence: ')
 
-sequence = input('Introduce a DNA sequence to be analize: ')
 
-def dna_length():
+def dna_count(seq):
+    seq = seq.lower()
+    num = len(seq)
 
-    sequence = sequence.upper()
-    number = length(sequence)
-    a = sequence.count('a')
-    c = sequence.count('c')
-    g = sequence.count('g')
-    t = sequence.count('t')
+    a = seq.count('a')
+    c = seq.count('c')
+    t = seq.count('t')
+    g = seq.count('g')
 
-    return number, a, c, g, t
+    print('Total length: ', num)
+    print('A:', a)
+    print('C:', c)
+    print('T:', t)
+    print('G:', g)
 
-info = dna_length()
-
-def print_dna_length(number):
-    print('Length: ', number[0])
-    print('a: ', number[1])
-    print('c: ', number[2])
-    print('g: ', number[3])
-    print('t: ', number[4])
     return
 
-print(print_dna_length(info))
+
+dna_count(seq)
