@@ -77,7 +77,7 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
 
         else:
             resp=404
-            f = open('error.html', 'r')
+            f = open('Error.html', 'r')
             content = f.read()
 
         self.send_response(resp)
