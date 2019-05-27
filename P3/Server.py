@@ -1,96 +1,56 @@
 import socket
-from Seq import Seq
+from P3.Seq import Seq
 
-PORT = 8080
-IP = "192.168.1.134"
-MAX_OPEN_REQUEST = 5
+PORT = 8040
+IP = '192.168.1.132'
+MAX_CLIENTS = 5
 
+def operations(s, cs):
+    """This function makes the operations we are requested to do"""
 
-def process_client(cs):
+    msg = cs.recv(2048).decode('utf-8')
+    msg = msg.partition('\n')
+    seq = msg[0].upper()
+    seq = Seq(seq)
+    ops = msg[2].split('\n')
 
+    if msg[0] == '':
+        result = 'ALIVE'
 
-    msg = cs.recv(2048).decode("utf-8")
-    msg = msg.split('\n')
+    elif not (msg[0].upper().strip('ACTG') == ''):
+        result = 'ERROR'
+    else:
+        result = 'OK'
 
-    se = Seq(msg[0])
-    response = ""
-    ac = "ACTG"
+    if result == 'ALIVE' or result == 'ERROR':
+        return result
+    else:
+        methods= {'len':seq.len(), 'complement':seq.complement(), 'reverse':seq.reverse(), 'countA':seq.count('A'),
+                        'countC':seq.count('C'), 'countT':seq.count('T'), 'countG':seq.count('G'), 'percA':seq.perc('A'),
+                        'percC':seq.perc('C'),'percT':seq.perc('T'),'percG':seq.perc('G')}
 
-
-    if msg[0] == "NOTHING":
-        response += "Nothing to do with you"
-        cs.send(str.encode(response))
-
-    nmbr = 0
-    for n in msg[0].upper():
-        if n in ac:
-            nmbr += 1
-    if nmbr == len(msg[0]):
-        response += "Yep!"
-        response += "\n"
-    elif nmbr != len(msg[0]):
-        response += "You are a failure"
-        cs.send(str.encode(response))
-
-
-
-    for i in msg[1:]:
-        if i == 'len':
-            response += se.len()
-        elif i == 'complement':
-                response += se.complement().strbases
-
-        elif i == 'reverse':
-            response += se.reversed().strbases
-
-        elif i == 'countA':
-            response += se.counting('A')
-
-        elif i == 'countC':
-            response += se.counting('C')
-
-        elif i == 'countT':
-            response += se.counting('T')
-
-        elif i == 'countG':
-            response += se.counting('G')
-
-        elif i == 'percA':
-            response += se.percentage('A')
-
-        elif i == 'percC':
-            response += se.percentage('C')
-
-        elif i == 'percT':
-            response += se.percentage('T')
-
-        elif i == 'percG':
-            response += se.percentage('G')
-
-
-
-    cs.send(str.encode(response))
-
-    cs.close()
-
-
+        out: str = '{}\nThe sequence is: {}\n'.format(result, seq.strbases)
+        for i in ops:
+            if i in methods.keys():
+                out += str(methods[i]) + '\n'
+            else:
+                if not (i ==''):
+                    out += 'Sorry, that is not a registered operation\n'
+        return out
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
 s.bind((IP, PORT))
-
-s.listen(MAX_OPEN_REQUEST)
-
-print("Correctly perform: {}".format(s))
+s.listen(MAX_CLIENTS)
 
 while True:
+    print('waiting for connections at : {}, {}'.format(IP, PORT))
+    (client_socket, address) = s.accept()
 
-    print("Waiting for connections at: {}, {}".format(IP, PORT))
-    (clientsocket, address) = s.accept()
+    print("CONNECTION From the IP: {}".format(address))
 
+    msg = operations(s, client_socket)
 
-    print("IP connection from: {}".format(address))
-
-    process_client(clientsocket)
-
-    clientsocket.close()
+    info = str.encode(msg)
+    client_socket.send(info)
+    print('Message sent')
+    client_socket.close()
