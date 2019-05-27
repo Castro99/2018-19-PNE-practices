@@ -1,0 +1,1150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ca26790f-7606-43c7-9435-26520c4d9f01" name="Default Changelist" comment="Python exercise">
+      <change afterPath="$PROJECT_DIR$/.idea/2018-19-PNE-practices.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session-11/Exercise_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Session-11/Exercise_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session-11/Webserver1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Session-11/Webserver1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session-13/Pink.html" beforeDir="false" afterPath="$PROJECT_DIR$/Session-13/Pink.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session-5/Base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Session-5/Base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session-5/EX_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Session-5/EX_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session-9/Client.py" beforeDir="false" afterPath="$PROJECT_DIR$/Session-9/Client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session-9/Exercise_1_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/Session-9/Exercise_1_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session-9/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/Session-9/Server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Session-9/TestColor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Session-9/TestColor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hghg.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/2018_19_PNE_practices$ex_2.coverage" NAME="ex-2 Coverage Results" MODIFIED="1554068648739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Session-15" />
+    <SUITE FILE_PATH="coverage/2018_19_PNE_practices$Ex_1_main.coverage" NAME="Ex_1.main Coverage Results" MODIFIED="1555335111437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/P1" />
+    <SUITE FILE_PATH="coverage/2018_19_PNE_practices$Client.coverage" NAME="Client Coverage Results" MODIFIED="1553258225920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Session-9" />
+    <SUITE FILE_PATH="coverage/2018_19_PNE_practices$Form_server.coverage" NAME="Form-server Coverage Results" MODIFIED="1553878402719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Session-15" />
+    <SUITE FILE_PATH="coverage/2018_19_PNE_practices$Webserver1.coverage" NAME="Webserver1 Coverage Results" MODIFIED="1553520044914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Session-11" />
+    <SUITE FILE_PATH="coverage/2018_19_PNE_practices$Webserver_2.coverage" NAME="Webserver_2 Coverage Results" MODIFIED="1553703200330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Session-13" />
+    <SUITE FILE_PATH="coverage/2018_19_PNE_practices$TestColor.coverage" NAME="TestColor Coverage Results" MODIFIED="1553369830733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Session-9" />
+    <SUITE FILE_PATH="coverage/2018_19_PNE_practices$Client_Program.coverage" NAME="Client_Program Coverage Results" MODIFIED="1555331810312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/P2" />
+    <SUITE FILE_PATH="coverage/2018_19_PNE_practices$Server.coverage" NAME="Server Coverage Results" MODIFIED="1553518610085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/P6" />
+    <SUITE FILE_PATH="coverage/2018_19_PNE_practices$Seq.coverage" NAME="Seq Coverage Results" MODIFIED="1553258152793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/P3" />
+    <SUITE FILE_PATH="coverage/2018_19_PNE_practices$Seq__1_.coverage" NAME="Seq (1) Coverage Results" MODIFIED="1553519736884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/P6" />
+    <SUITE FILE_PATH="coverage/2018_19_PNE_practices$Exercise_1_server.coverage" NAME="Exercise_1_server Coverage Results" MODIFIED="1553371130609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Session-9" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P3/Client.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/P2/Teacher_server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P2/Ex_1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P4/Webserver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P2/Client_Program.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+              <folding>
+                <element signature="e#23#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P3/Seq.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P4/Error.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P4/Index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P3/Server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P4/Pink.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Session-15/Error.html" />
+        <option value="$PROJECT_DIR$/Session-15/Form1.html" />
+        <option value="$PROJECT_DIR$/Session-15/Form2.html" />
+        <option value="$PROJECT_DIR$/Session-15/Form-server.py" />
+        <option value="$PROJECT_DIR$/Session-15/ex-1.py" />
+        <option value="$PROJECT_DIR$/Session-15/ex-2.py" />
+        <option value="$PROJECT_DIR$/Session-15/Exercise_1.html" />
+        <option value="$PROJECT_DIR$/Session-15/Exercise_2.html" />
+        <option value="$PROJECT_DIR$/Session-17-json/Error.html" />
+        <option value="$PROJECT_DIR$/Session-17-json/Index.html" />
+        <option value="$PROJECT_DIR$/Session-17-json/Person.js" />
+        <option value="$PROJECT_DIR$/Session-17-json/Person.json" />
+        <option value="$PROJECT_DIR$/Session-17-json/Server-json.py" />
+        <option value="$PROJECT_DIR$/Session-17-json/People.json" />
+        <option value="$PROJECT_DIR$/P1/Ex_1.py" />
+        <option value="$PROJECT_DIR$/P5/Pink.html" />
+        <option value="$PROJECT_DIR$/P5/Blue.html" />
+        <option value="$PROJECT_DIR$/P5/Error.html" />
+        <option value="$PROJECT_DIR$/P7/Seq.py" />
+        <option value="$PROJECT_DIR$/P1/Ex_1.main.py" />
+        <option value="$PROJECT_DIR$/P0/DNA_count.py" />
+        <option value="$PROJECT_DIR$/P0/dna" />
+        <option value="$PROJECT_DIR$/P0/DNA_count_file.py" />
+        <option value="$PROJECT_DIR$/P0-Extra/CPLX2_print.py" />
+        <option value="$PROJECT_DIR$/P0-Extra/CPLX2_count.py" />
+        <option value="$PROJECT_DIR$/P7/Client.py" />
+        <option value="$PROJECT_DIR$/Session-5/Base.py" />
+        <option value="$PROJECT_DIR$/Session-5/Ex_1.2.py" />
+        <option value="$PROJECT_DIR$/Session-5/Hello_main.py" />
+        <option value="$PROJECT_DIR$/Session-5/EX_2.py" />
+        <option value="$PROJECT_DIR$/Session-9/Client.py" />
+        <option value="$PROJECT_DIR$/Session-9/Exercise_1_server.py" />
+        <option value="$PROJECT_DIR$/Session-9/Server.py" />
+        <option value="$PROJECT_DIR$/Session-11/Exercise_1.py" />
+        <option value="$PROJECT_DIR$/Session-11/Webserver1.py" />
+        <option value="$PROJECT_DIR$/P4/Webserver.py" />
+        <option value="$PROJECT_DIR$/P4/Pink.html" />
+        <option value="$PROJECT_DIR$/P4/Error.html" />
+        <option value="$PROJECT_DIR$/P4/Index.html" />
+        <option value="$PROJECT_DIR$/P6/Seq.py" />
+        <option value="$PROJECT_DIR$/P6/Form.html" />
+        <option value="$PROJECT_DIR$/P6/Server.py" />
+        <option value="$PROJECT_DIR$/P5/Server.py" />
+        <option value="$PROJECT_DIR$/P5/Index.html" />
+        <option value="$PROJECT_DIR$/P4/Blue.html" />
+        <option value="$PROJECT_DIR$/P3/Server.py" />
+        <option value="$PROJECT_DIR$/P3/Client.py" />
+        <option value="$PROJECT_DIR$/P3/Seq.py" />
+        <option value="$PROJECT_DIR$/P2/Client_Program.py" />
+        <option value="$PROJECT_DIR$/P2/Teacher_server.py" />
+        <option value="$PROJECT_DIR$/P2/Ex_1.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="100" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="820" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="2018-19-PNE-practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2018-19-PNE-practices" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2018-19-PNE-practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2018-19-PNE-practices" type="462c0819:PsiDirectoryNode" />
+              <item name="P0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2018-19-PNE-practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2018-19-PNE-practices" type="462c0819:PsiDirectoryNode" />
+              <item name="P1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2018-19-PNE-practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2018-19-PNE-practices" type="462c0819:PsiDirectoryNode" />
+              <item name="P2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2018-19-PNE-practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2018-19-PNE-practices" type="462c0819:PsiDirectoryNode" />
+              <item name="P3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2018-19-PNE-practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2018-19-PNE-practices" type="462c0819:PsiDirectoryNode" />
+              <item name="P4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2018-19-PNE-practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2018-19-PNE-practices" type="462c0819:PsiDirectoryNode" />
+              <item name="P5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2018-19-PNE-practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2018-19-PNE-practices" type="462c0819:PsiDirectoryNode" />
+              <item name="P6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2018-19-PNE-practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2018-19-PNE-practices" type="462c0819:PsiDirectoryNode" />
+              <item name="P7" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2018-19-PNE-practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="2018-19-PNE-practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.Webserver">
+    <configuration name="Base" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="2018-19-PNE-practices" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/P5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P5/Server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Ex_1.main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="2018-19-PNE-practices" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/P3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P3/Client.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="2018-19-PNE-practices" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/P2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P2/Client_Program.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Teacher_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="2018-19-PNE-practices" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/P5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P5/Server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Webserver" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="2018-19-PNE-practices" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/P2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P2/Client_Program.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Ex_1.main" />
+      <item itemvalue="Python.Server" />
+      <item itemvalue="Python.Teacher_server" />
+      <item itemvalue="Python.Base" />
+      <item itemvalue="Python.Webserver" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Webserver" />
+        <item itemvalue="Python.Base" />
+        <item itemvalue="Python.Teacher_server" />
+        <item itemvalue="Python.Server" />
+        <item itemvalue="Python.Ex_1.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca26790f-7606-43c7-9435-26520c4d9f01" name="Default Changelist" comment="" />
+      <created>1552913365131</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552913365131</updated>
+      <workItem from="1552913371199" duration="9574000" />
+      <workItem from="1553369368238" duration="16575000" />
+      <workItem from="1553964451724" duration="758000" />
+      <workItem from="1554068520985" duration="4843000" />
+      <workItem from="1555331003231" duration="3499000" />
+      <workItem from="1556186845725" duration="90000" />
+    </task>
+    <task id="LOCAL-00031" summary="Python exercise">
+      <created>1553878584210</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1553878584210</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Python exercise">
+      <created>1553879379593</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1553879379593</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Python exercise">
+      <created>1553964714594</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1553964714594</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Python exercise">
+      <created>1554068801698</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1554068801698</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Python exercise">
+      <created>1554069446558</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1554069446558</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Python exercise">
+      <created>1554214215739</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1554214215739</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Python exercise">
+      <created>1554214701964</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1554214701964</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Python exercise">
+      <created>1554215065004</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1554215065004</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Python exercise">
+      <created>1554299039232</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1554299039232</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Python exercise">
+      <created>1554300876945</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1554300876945</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Python exercise">
+      <created>1555331160504</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1555331160504</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Python exercise">
+      <created>1555331429156</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1555331429157</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Python exercise">
+      <created>1555331494789</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1555331494789</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Python exercise">
+      <created>1555331633371</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1555331633371</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Python exercise">
+      <created>1555331672193</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1555331672193</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Python exercise">
+      <created>1555332085642</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1555332085642</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Python exercise">
+      <created>1555332120292</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1555332120292</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Python exercise">
+      <created>1555333252049</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1555333252050</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Python exercise">
+      <created>1558958992948</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1558958992949</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Python exercise">
+      <created>1558959005290</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1558959005291</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Python exercise">
+      <created>1558959017394</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1558959017394</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Python exercise">
+      <created>1558959295161</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1558959295161</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Python exercise">
+      <created>1558959307667</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1558959307668</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Python exercise">
+      <created>1558959431432</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1558959431432</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Python exercise">
+      <created>1558959598724</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1558959598724</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Python exercise">
+      <created>1558969677984</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1558969677984</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Python exercise">
+      <created>1558969692870</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1558969692870</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Python exercise">
+      <created>1558971667972</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1558971667972</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Python exercise">
+      <created>1558971686301</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1558971686301</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Python exercise">
+      <created>1558971697107</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1558971697107</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Python exercise">
+      <created>1558971708438</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1558971708439</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Python exercise">
+      <created>1558971795045</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1558971795045</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Python exercise">
+      <created>1558971805968</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1558971805968</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Python exercise">
+      <created>1558972048849</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1558972048849</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Python exercise">
+      <created>1558972060498</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1558972060498</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Python exercise">
+      <created>1558972072601</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1558972072601</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Python exercise">
+      <created>1558972082019</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1558972082019</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Python exercise">
+      <created>1558972090968</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1558972090968</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Python exercise">
+      <created>1558972193470</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1558972193470</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Python exercise">
+      <created>1558972203452</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1558972203452</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Python exercise">
+      <created>1558972215235</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1558972215235</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Python exercise">
+      <created>1558972223503</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1558972223503</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Python exercise">
+      <created>1558972232148</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1558972232148</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Python exercise">
+      <created>1558973057665</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1558973057665</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Python exercise">
+      <created>1558973068793</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1558973068793</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Python exercise">
+      <created>1558973075814</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1558973075814</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Python exercise">
+      <created>1558973083907</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1558973083907</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Python exercise">
+      <created>1558973093398</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1558973093398</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Python exercise">
+      <created>1558973106351</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1558973106351</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="35339000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19771864" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.28707224" side_tool="true" visible="true" weight="0.30417228" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.4993573" weight="0.32974428" />
+      <window_info anchor="bottom" id="Python Console" order="4" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" sideWeight="0.49936628" weight="0.32974428" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.71292776" visible="true" weight="0.30417228" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Database" order="0" weight="0.3298585" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="2" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Correct IP" />
+    <MESSAGE value="Python exercise" />
+    <option name="LAST_COMMIT_MESSAGE" value="Python exercise" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Session-5/Ex_1.2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-5/Hello.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-5/Hello_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-7/Exercise-3.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-7/File.read.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-7/File.write.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-7/Mynotes">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-7/Server.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-5/EX_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-5/Base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-5/Ex_2.2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-7/Client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-7/Exercise-2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="51" selection-start-column="51" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P0/DNA_count.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-9/Client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" selection-start-line="4" selection-start-column="19" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-9/Exercise_1_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="7" />
+          <folding>
+            <element signature="e#22#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-9/Server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-9/TestColor.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-11/Exercise_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-11/Index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-11/Webserver1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-13/Webserver.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-13/Webserver_2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-15/ex-1.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-15/ex-2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-15/Form-server.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Session-17-json/Server-json.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P5/Error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="63" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P0-Extra/CPLX2">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P1/Ex_1.main.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P1/Ex_1.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6/Seq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="39" column="48" lean-forward="true" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6/Error.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6/Server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6/Form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P7/Client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P5/Index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P5/Server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P5/Pink.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P5/Blue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P4/Blue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P4/Error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P4/Index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P4/Pink.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P4/Webserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P3/Client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P3/Seq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P3/Server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P2/Ex_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P2/Client_Program.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P2/Teacher_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
