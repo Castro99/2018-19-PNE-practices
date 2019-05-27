@@ -4,7 +4,7 @@ import socket
 import termcolor
 
 # Change this IP to yours!!!!!
-IP = "192.168.1.134"
+IP = "192.168.1.132"
 PORT = 8080
 MAX_OPEN_REQUESTS = 5
 
