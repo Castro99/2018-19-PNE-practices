@@ -1,18 +1,19 @@
-#Exercise Client lesson P3
+import socket
 
-    import socket
+# SERVER IP, PORT
+PORT = 8040
+IP = "192.168.1.132"
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((IP, PORT))
+msg = """actg
+len
+countT
+aaa
+"""
 
-    port = 8080
-    IP = "192.168.1.134"
+s.send(msg.encode())
 
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.connect((IP, port))
-    msg = """
-    """
+info = s.recv(2048).decode('utf-8')
+print(info)
 
-    s.send(msg.encode())
-
-    message = s.recv(2048).decode('utf-8')
-    print(message)
-
-    s.close()
+s.close()
