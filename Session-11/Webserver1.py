@@ -4,7 +4,7 @@ import socket
 import termcolor
 
 # Change this IP to yours!!!!!
-IP = "192.168.1.134"
+IP = "192.168.1.132"
 PORT = 8080
 MAX_OPEN_REQUESTS = 5
 
@@ -21,7 +21,7 @@ def process_client(cs):
     print("Request message: ")
     termcolor.cprint(msg, 'green')
 
-    with open('index.html','r') as f:
+    with open('Index.html','r') as f:
         content = ''
         for row in f:
             content += row
