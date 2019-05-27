@@ -1,6 +1,6 @@
 #Exercise III P0-Extra
 
-with open('CPLX2.txt', 'r') as l:
+with open('CPLX2', 'r') as l:
     a, c, t, g = 0, 0, 0, 0
     for x in l:
         if '>' in x:
