@@ -2,7 +2,7 @@
 
 import socket
 
-IP = "192.168.1.134"
+IP = "192.168.1.132"
 PORT = 8080
 
 while True:
