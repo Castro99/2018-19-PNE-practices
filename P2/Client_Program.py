@@ -2,25 +2,22 @@
 import socket
 from P2.Ex_1 import Seq
 
+
+
+print("Socket has been created")
+
+PORT = 8024
+IP = "192.168.1.132"
+
+#ask the user for a sequence
 while True:
+    #ALWAYS ASK THE USEWR FOR THE MESSAGE BEFORE SENDING IT TO THE SERVER, BECAUSE OTHERWISE YOU'RE BLOCKING THE SERVER
+    seq = Seq(input('enter your sequence: '))
+
+    reverse = seq.reverse()
+    comp = seq.complement()
+
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-    print("Socket has been created")
-
-    PORT = 8080
-    IP = "192.168.1.134"
-
-
-    file = input("Type a message: ")
-    seq = Seq(file)
-    rev = Seq.reversed(seq)
-    comp = Seq.complement(rev)
-    comp1 = comp.strbases
-
-    s.connect((IP ,PORT))
-
-    s.send(str.encode(comp1))
-
-    msg = s.recv(2048).decode('utf-8')
-
-s.close()
+    s.connect((IP, PORT))
+    info = '\nComplementary chain: {} \nReverse chain: {}'.format(comp, reverse)
+    s.send(info.encode())
