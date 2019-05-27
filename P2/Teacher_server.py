@@ -1,8 +1,8 @@
 import socket
 
 
-PORT = 8080
-IP = "192.168.1.134"
+PORT = 8081
+IP = "192.168.1.132"
 MAX_OPEN_REQUESTS = 5
 
 
@@ -38,8 +38,8 @@ try:
         clientsocket.close()
 
 except socket.error:
-    print("ERROR problems with the port {}. Do you have permission or you are a fekas?".format(PORT))
+        print("ERROR problems with the port {}. Do you have permission or you are a fekas?".format(PORT))
 
 except KeyboardInterrupt:
-    print("The user just broke the server or decide to stop it")
+        print("The user just broke the server or decide to stop it")
 serversocket.close()
