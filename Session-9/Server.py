@@ -3,7 +3,7 @@
 import socket
 
 PORT = 8081
-IP = "192.168.1.134"
+IP = "192.168.1.132"
 MAX_OPEN_REQUEST = 5
 
 # Create a socket for connecting to the clients
