@@ -1,6 +1,6 @@
 #Exercise II lesson P2
 import socket
-from P2.Ex_1 import Seq
+from P2.Seq import Seq
 
 
 
