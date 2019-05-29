@@ -19,5 +19,4 @@ def count_base(seq):
                   'C': c,
                   'T': t,
                   'G': g}
-
-return count
+    return count
