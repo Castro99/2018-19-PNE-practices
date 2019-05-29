@@ -1,11 +1,11 @@
 # Exercise of reading file Session 7
 
-File = "mynotes.txt"
+name = "mynotes.txt"
 
 
-mytext = open(File, 'c')
+mytext = open(name, 'r')
 
-print("The file has been opened correctly : {}".format(mytext.File))
+print("The file has been opened correctly : {}".format(mytext.name))
 
 Text = mytext.read()
 
