@@ -12,17 +12,17 @@ class Seq:
 
 class Gene(Seq):
 
-s1 = Gene("ATTCGATCC")
-s2 = Seq("AAAGG")
+    s1 = Seq("ATTCGATCC")
+    s2 = Seq("AAAGG")
 
-str1 = s1.strbases
-str2 = s2.strbases
+    str1 = s1.strbases
+    str2 = s2.strbases
 
-l1 = s1.len()
-l2 = s2.len()
+    l1 = s1.len()
+    l2 = s2.len()
 
-print("First Sequence: {}".format(str1))
-print("First Length: {}".format(l1))
-print("Second Seuqnece: {}".format(str2))
-print("Second Length: ·{}".format(l2))
+    print("First Sequence: {}".format(str1))
+    print("First Length: {}".format(l1))
+    print("Second Seuqnece: {}".format(str2))
+    print("Second Length: ·{}".format(l2))
 
