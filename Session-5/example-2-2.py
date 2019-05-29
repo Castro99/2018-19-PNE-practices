@@ -1,5 +1,5 @@
 #Exercise II Second part lesson 5
-from Base import count_base
+from Bases import count_base
 
 def percentages(seq):
 

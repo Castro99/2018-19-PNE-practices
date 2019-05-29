@@ -1,4 +1,4 @@
-from Base import count_base
+from Bases import count_base
 
 def percentages(seq):
     # Calculate the total length
