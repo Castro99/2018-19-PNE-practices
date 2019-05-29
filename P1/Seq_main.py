@@ -1,6 +1,6 @@
 #Exercise I part II lesson P1
 
-from P1.Ex_1 import Seq
+from P1.Seq import Seq
 
 Sequence1 = Seq("ACTGAATTCTTGC")
 Sequence2 = Seq("CCTGA")
