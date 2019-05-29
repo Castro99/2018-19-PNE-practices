@@ -4,7 +4,7 @@ import http.server
 import socketserver
 
 # Define the Server's port
-PORT = 8009
+PORT = 8000
 
 
 # Class with our Handler. It is a called derived from BaseHTTPRequestHandler
