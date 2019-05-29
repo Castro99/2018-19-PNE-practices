@@ -3,7 +3,7 @@ import socket
 
 PORT = 8080
 IP = "192.168.1.132"
-MAX_OPEN_REQUESTS = 5
+MAX_OPEN_REQUESTS = 5000
 
 
 # Counting the number of connections
