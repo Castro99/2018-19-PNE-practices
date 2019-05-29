@@ -3,11 +3,7 @@ import socketserver
 import termcolor
 from P6.Seq import Seq
 
-# Define the Server's port
-PORT = 8080
-
-# Class with oreur Handler. It is a called derived from BaseHTTPRequestHandler
-# It means that our class inheritates all his methods and properties
+PORT = 8002
 
 class TestHandler(http.server.BaseHTTPRequestHandler):
 
@@ -18,7 +14,7 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
         path = self.path
 
         if path == '/':
-            f = open("Form.html", 'r')
+            f = open("index.html", 'r')
             content = f.read()
             resp=200
 
@@ -75,9 +71,13 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
                 d = open('response.html', 'r')
                 content = d.read()
 
+            else:
+                f = open('error2.html', 'r')
+                content = f.read()
+
         else:
             resp=404
-            f = open('Error.html', 'r')
+            f = open('error.html', 'r')
             content = f.read()
 
         self.send_response(resp)
