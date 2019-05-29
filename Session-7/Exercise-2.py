@@ -10,7 +10,7 @@ while True:
     print("The Socket has been created")
 
     PORT = 8080
-    IP = "192.168.1.134"
+    IP = "212.128.253.102"
     # Connect to server
 
     s.connect((IP, PORT))
