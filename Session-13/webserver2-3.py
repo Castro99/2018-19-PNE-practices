@@ -1,10 +1,9 @@
-#Exercise Webserver II lesson 13
-
 import http.server
 import socketserver
+import termcolor
 
 # Define the Server's port
-PORT = 8000
+PORT = 8007
 
 
 # Class with our Handler. It is a called derived from BaseHTTPRequestHandler
@@ -15,34 +14,30 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
         """This method is called whenever the client invokes the GET method
         in the HTTP protocol request"""
 
-        # We just print a message
-        print("GET received!")
-
-        print('Request line:' + self.requestline)
-        print('Command: ' + self.command)
-        print('Path: ' + self.path)
-
-        content = ''
-
-        if self.path == '/':
-            file='Index.html'
-        else:
-            file='Error.html'
-
-        with open(file, 'r') as f:
-            for line in f:
-                content += line
-
-        self.send_response(200)
-        self.send_header('Content-Type', 'text/html')
-        self.send_header('Length-Type', len(str.encode(content)))
-        self.end_headers()
-
-        self.wfile.write(str.encode(content))
+        # Print the request line
+        termcolor.cprint(self.requestline, 'green')
 
         # IN this simple server version:
         # We are NOT processing the client's request
-        # We are NOT generating any response message
+        # It is a happy server: It always returns a message saying
+        # that everything is ok
+
+        # Message to send back to the clinet
+        contents = "WELCOME"
+
+        # Generating the response message
+        self.send_response(200)  # -- Status line: OK!
+
+        # Define the content-type header:
+        self.send_header('Content-Type', 'text/plain')
+        self.send_header('Content-Length', len(str.encode(contents)))
+
+        # The header is finished
+        self.end_headers()
+
+        # Send the response message
+        self.wfile.write(str.encode(contents))
+
         return
 
 
@@ -63,7 +58,7 @@ with socketserver.TCPServer(("", PORT), Handler) as httpd:
         httpd.serve_forever()
     except KeyboardInterrupt:
         print("")
-        print("Stopped by the user")
+        print("Stoped by the user")
         httpd.server_close()
 
 print("")
