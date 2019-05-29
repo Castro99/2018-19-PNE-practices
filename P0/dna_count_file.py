@@ -2,7 +2,7 @@ def dna_count_file():
 
     # opening text file and convert all sequences into one
 
-    with open('dna', 'r') as f:
+    with open('DNA.txt', 'r') as f:
         sequence=[]
         for row in f:
             sequence.append(row)
