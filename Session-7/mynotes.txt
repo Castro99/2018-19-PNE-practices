@@ -21,4 +21,4 @@ time=0.076 ms
 Ping time to 10.0.6.207
 time=0.550 ms
 Port: different extensions from the same IP.To connect to a server we need to use a IP address of the computer and the
-port of the server. It is also a number
+port of the server. It is also a numberExample added to my file
